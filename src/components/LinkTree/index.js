@@ -12,7 +12,7 @@ export const Container = styled.section`
   img {
     max-width: 180px;
     display: block;
-    margin: 50px auto;
+    margin: 70px auto;
     margin: 
   }
 
@@ -35,7 +35,7 @@ export const Container = styled.section`
 export default function LinkTree() {
   return (
     <Container>
-      <img src="/img/nav-logo.svg" alt="Zero27 Logo" />
+      <img src="/img/primary.png" alt="Zero27 Logo" />
       {
         links.map((link, index) => {
           return (
