@@ -2,9 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 export const Btn = styled.a`
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  padding: 0.75em 1.5em;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 65px;
   color: white;
   text-decoration: none;
   background-color: ${({theme}) => theme.colors.color1};
@@ -21,10 +24,6 @@ export const Btn = styled.a`
     background-color: ${({theme}) => theme.colors.color3};
   }
   
-  & img {
-    margin-right: 10px;
-  }
-  
   &:active {
     transform: scale(0.9);
   }
@@ -38,7 +37,6 @@ export default function WhatsAppBtn() {
             target="_blank"
             rel="noopener noreferrer">
             <img height="25" width="25" src="/img/icons/wpp.svg" alt="WhatsApp"/>
-            <span>Book via WhatsApp</span>
         </Btn>
     );
 }
